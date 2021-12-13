@@ -1,10 +1,15 @@
 #img-bg{
-  background-image: url('https://i.imgur.com/uxtlCdd.jpg');
+  background-image: url('https://i.imgur.com/tC0yZ8Q.png');
 
   min-height: 695px;
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #90CAF9;
 }
 
+.fs-28
+{
+    font-size: 28pt;
+}
