@@ -11,7 +11,7 @@ export class TemaService {
 
   constructor(private http: HttpClient) { }
 
-  token= {
+  token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
@@ -22,4 +22,5 @@ export class TemaService {
   postTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>('http://localhost:8080/tema', tema, this.token)
   }
+
 }
