@@ -36,6 +36,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
 
     if (environment.token == '') {
       alert('Sua seção expirou, faça o login')
@@ -45,11 +46,10 @@ export class InicioComponent implements OnInit {
     this.getAllPostagens()
   }
 
-  getAllTemas() {
+  getAllTemas(){
     this.temaService.getAllTema().subscribe((resp: Tema[]) => {
       this.listaTemas = resp
     })
-
   }
 
   findByIdTema() {
@@ -63,7 +63,6 @@ export class InicioComponent implements OnInit {
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp
     })
-
   }
 
   findByIdUser(){
@@ -72,9 +71,9 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  publicar() {
+  publicar(){
     this.tema.id = this.idTema
-    this.postagem
+    this.postagem.tema = this.tema
 
     this.user.id = this.idUser
     this.postagem.usuario = this.user
