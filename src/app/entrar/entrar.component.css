@@ -1,3 +1,8 @@
+.fs-28
+{
+    font-size: 28pt;
+}
+
 #img-bg{
   background-image: url('https://i.imgur.com/QZCY9HZ.png');
   min-height: 695px;
@@ -7,9 +12,8 @@
   background-color: #90CAF9;
 }
 
-.fs-28
-{
-    font-size: 28pt;
+.bg{
+  background-color: #90CAF9;
 }
 
 #entrar{
@@ -21,17 +25,20 @@
   padding-top: 4%;
   padding-bottom: 3%;
 
-  width: 600px;
+  width: 350px;
   padding: 20px 30px;
   margin-top: 10vh;
   margin-bottom: 10vh;
   border-radius: 1rem;
 }
 
-#bg{
-  background-color: #90CAF9;
-}
-
-#logo{
-
+.btn {
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  width: 350px;
+  height: 43px;
+  left: 906px;
+  top: 523px;
+  background-color: #0000cd;
+  border-radius: 8px;
 }
